@@ -39,3 +39,4 @@ After that you can run an http-server from the dist/movie-search folder to test 
 2.  Average rating (combining IMDB, Rotten Tomatoes and Metacritic ratings) of movies on details page
 3.  Simple animations on listing and movie details page
 4.  Custom favicon and mobile (Add to home screen) icons  
+5.  Offline banner shows when offline 
