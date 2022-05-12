@@ -1,0 +1,19 @@
+.main-content {
+  padding: 0 0.5em;
+}
+
+.container {
+  height: calc(100% - 8em);
+}
+
+// Hacky hacky :(
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 0.5em 0 1em 0;
+}
+
+// Hacky hacky again
+::ng-deep .mat-form-field-appearance-outline {
+  .mat-form-field-prefix {
+    top: 0.4em !important;
+  }
+}

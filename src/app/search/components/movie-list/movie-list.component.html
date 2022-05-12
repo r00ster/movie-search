@@ -1,0 +1,17 @@
+<app-search-box (searchString)="listMovies($event)"></app-search-box>
+
+<span *ngIf="moviesEmpty() && !showSpinner" class="no-results">no search results</span>
+<mat-spinner *ngIf="showSpinner" class="spinner"></mat-spinner>
+
+<div *ngIf="!showSpinner" [@listStagger]="movies.length">
+  <mat-card class="movie-card" *ngFor="let movie of movies">
+    <mat-card-title-group>
+      <mat-card-title class="movie-title">{{ movie.Title }}</mat-card-title>
+      <mat-card-subtitle>{{ movie.Year }}</mat-card-subtitle>
+      <img *ngIf="showPoster(movie)" mat-card-sm-image [src]="movie.Poster" class="movie-poster">
+    </mat-card-title-group>
+    <mat-card-content>
+      <button mat-raised-button color="accent" (click)="openMovieDetails(movie.imdbID)">More details</button>
+    </mat-card-content>
+  </mat-card>
+</div>

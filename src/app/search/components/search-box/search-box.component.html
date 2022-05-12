@@ -1,0 +1,10 @@
+<form [formGroup]="searchForm" (ngSubmit)="listMovies()">
+  <mat-form-field appearance="outline" color="primary" class="search-box">
+    <input matInput formControlName="search" type="text" placeholder="Enter movie name..." [matAutocomplete]="auto" />
+    <mat-autocomplete #auto="matAutocomplete">
+    </mat-autocomplete>
+    <mat-icon matPrefix>search</mat-icon>
+    <mat-hint align="end">Required</mat-hint>
+    <mat-error>Please enter a value in the search box</mat-error>
+  </mat-form-field>
+</form>

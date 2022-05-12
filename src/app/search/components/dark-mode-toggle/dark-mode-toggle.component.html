@@ -1,0 +1,8 @@
+<div class="dark-mode-toggle ">
+  <h2>Select App Theme: </h2>
+  <mat-button-toggle-group name="lightDarkMode" aria-label="Light or Dark Mode" [value]="colorMode"
+    (change)="onModeChange($event.value)">
+    <mat-button-toggle value="light">Light Mode</mat-button-toggle>
+    <mat-button-toggle value="dark">Dark Mode</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>

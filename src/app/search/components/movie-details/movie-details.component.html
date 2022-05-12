@@ -1,0 +1,22 @@
+<mat-card *ngIf="!showSpinner">
+  <mat-card-header class="movie-details-header">
+    <mat-card-title>{{ movie.Title }}</mat-card-title>
+    <mat-card-subtitle>{{ movie.Year }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="movie-details">
+      <img [src]="movie.Poster" [alt]="movie.Title">
+      <span><strong>Plot:</strong> {{ movie.Plot }}...</span>
+      <span><strong>Type:</strong> {{ movie.Type }}</span>
+      <span><strong>Rated:</strong> {{ movie.Rated }}</span>
+      <span><strong>Genre:</strong> {{ movie.Genre }}</span>
+      <span><strong>Awards:</strong> {{ movie.Awards }}</span>
+      <span *ngFor="let rating of movie.Ratings">
+        <strong>{{ rating.Source }}:</strong> {{ rating.Value }}
+      </span>
+    </div>
+    <app-average-rating [ratings]="movie.Ratings"></app-average-rating>
+  </mat-card-content>
+</mat-card>
+
+<mat-spinner *ngIf="showSpinner" class="spinner"></mat-spinner>

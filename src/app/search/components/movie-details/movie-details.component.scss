@@ -1,0 +1,39 @@
+.movie-details {
+  &:before {
+    content: '';
+    display: inline-block;
+  }
+
+  img {
+    float: left;
+    margin-right: 1em;
+    width: 120px;
+  }
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  span {
+    display: block;
+    margin-bottom: 2.2em;
+    margin-top: -22px;
+
+    &:last-child {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.movie-details-header {
+  margin-left: -16px;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

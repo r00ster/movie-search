@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>{{ title$ | async }}</span>
+    <button *ngIf="!isHome()" (click)="openSearch()" class="search-button" mat-icon-button>
+      <mat-icon>home</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>

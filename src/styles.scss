@@ -1,0 +1,33 @@
+@use '@angular/material'as mat;
+
+@include mat.core();
+
+$movie-search-primary: mat.define-palette(mat.$teal-palette);
+$movie-search-accent: mat.define-palette(mat.$indigo-palette, A200, A100, A400);
+
+$movie-search-warn: mat.define-palette(mat.$red-palette);
+
+$movie-search-theme: mat.define-light-theme((color: (primary: $movie-search-primary,
+      accent: $movie-search-accent,
+      warn: $movie-search-warn,
+    )));
+$movie-search-dark-theme: mat.define-dark-theme((color: (primary: $movie-search-primary,
+      accent: $movie-search-accent,
+      warn: $movie-search-warn,
+    )));
+
+@include mat.all-component-themes($movie-search-theme);
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.theme-dark {
+  @include mat.all-component-themes($movie-search-dark-theme);
+}

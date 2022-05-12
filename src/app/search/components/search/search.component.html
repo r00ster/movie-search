@@ -1,0 +1,12 @@
+<h1 class="heading">Find details on any Movie</h1>
+<form [formGroup]="searchForm" (ngSubmit)="openMovieList()">
+  <mat-form-field appearance="outline" color="primary" class="search-input">
+    <input matInput formControlName="search" type="text" placeholder="Enter movie name..." [matAutocomplete]="auto" />
+    <mat-autocomplete #auto="matAutocomplete">
+    </mat-autocomplete>
+    <mat-icon matPrefix>search</mat-icon>
+    <mat-error>Please enter a value in the search box</mat-error>
+  </mat-form-field>
+  <button (ngSubmit)="openMovieList()" mat-raised-button color="primary" class="search-button">Search</button>
+  <app-dark-mode-toggle></app-dark-mode-toggle>
+</form>

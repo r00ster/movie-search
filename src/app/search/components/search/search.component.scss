@@ -1,0 +1,27 @@
+.heading,
+.search-input,
+.search-button,
+.light-dark-mode {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading {
+  top: 25%;
+  text-align: center;
+  font-weight: 900;
+  font-size: 6vh;
+  line-height: 1.2;
+  width: 70%;
+  display: block;
+}
+
+.search-input {
+  top: 50%;
+  width: 70%;
+}
+
+.search-button {
+  top: 60%;
+}
