@@ -1,6 +1,9 @@
 # Movie Search
 Movies app that allows you to search for any movie (also series and some games).
 
+## Live site
+https://r00ster.github.io/movie-search
+
 ## Requirements
 
 #### Download the LTS version of NodeJS at:

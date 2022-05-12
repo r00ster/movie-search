@@ -8,7 +8,8 @@ import { ColorModeService } from './services/color-mode.service';
 })
 
 export class AppComponent implements OnInit {
-  private isDark = false;
+  title = 'movie-search';
+  private isDark: boolean = false;
   colorMode?: string;
 
   constructor(private colorModeService: ColorModeService) { }
