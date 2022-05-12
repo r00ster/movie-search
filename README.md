@@ -16,7 +16,7 @@ npm install -g @angular/cli@latest
 npm install
 ```
 
-## Startup Angular app
+## Startup Angular development app (and watch for changes)
 
 ### Run the following in your terminal:
 ```
@@ -29,7 +29,7 @@ ng serve
 ```
 ng build
 ```
-After that you can run an http-server in side of the dist/movie-search folder to test in browser.
+After that you can run an http-server from the dist/movie-search folder to test in browser.
 
 ## Extra features
 1.  Dark mode toggle
