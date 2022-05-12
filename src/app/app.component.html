@@ -2,6 +2,7 @@
 
 <mat-drawer-container class="container">
   <mat-drawer-content class="main-content">
+    <div class="offline-banner" *ngIf="displayOfflineBanner" [@grow]>You are offline!</div>
     <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>
