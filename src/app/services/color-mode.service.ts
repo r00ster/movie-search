@@ -13,6 +13,11 @@ export class ColorModeService {
 
   constructor() { }
 
+  /**
+   * @description Sets the color mode
+   * @param color
+   * @returns {void}
+   */
   setColorMode(color: string): void {
     this.colorMode.next(color);
   }
