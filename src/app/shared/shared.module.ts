@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { OfflineBannerComponent } from './components/offline-banner/offline-banner.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 
@@ -16,6 +17,7 @@ import { OfflineBannerComponent } from './components/offline-banner/offline-bann
     FooterComponent,
     HeaderComponent,
     OfflineBannerComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     CommonModule,
@@ -29,6 +31,7 @@ import { OfflineBannerComponent } from './components/offline-banner/offline-bann
     HeaderComponent,
     FooterComponent,
     OfflineBannerComponent,
+    PageNotFoundComponent,
   ]
 })
 export class SharedModule { }
